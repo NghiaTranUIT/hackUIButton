@@ -44,8 +44,13 @@
 {
     // Hack here
     NSLog(@"implement your sound here");
+    [self implementYourFeatured];
     
     // Forward to primary implementation.
     [self swizzle_SendAction:action to:target forEvent:event];
+}
+-(void) implementYourFeatured
+{
+    
 }
 @end
